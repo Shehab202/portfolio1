@@ -1,0 +1,32 @@
+.services {
+  overflow: hidden;
+}
+.services .box {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.services .box .card {
+  background-image: linear-gradient(to top, #000428, #004e92);
+
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.services .box .card h1 {
+  color: var(--color-primary);
+  font-size: 50px;
+}
+.services .box .card p {
+  color: rgb(255, 255, 255, 0.5);
+}
+.services .box .card:hover {
+  background-color: transparent;
+  border: 1px solid #2c2c6c;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .services .box .card {
+    text-align: center;
+  }
+}

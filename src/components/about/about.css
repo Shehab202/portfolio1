@@ -1,0 +1,103 @@
+#about {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+#about .imge {
+  background-image: linear-gradient(
+    transparent,
+    var(--color-primary),
+    transparent,
+    var(--color-primary-variant)
+  );
+  border-radius: 30px;
+
+  max-width: 100%;
+  width: 350px;
+}
+
+#about .imge img {
+  height: 390px;
+  width: 350px;
+  border-radius: 30px;
+  transform: rotate(10deg);
+  transition: var(--transition);
+  cursor: pointer;
+}
+#about .imge img:hover {
+  transform: rotate(0deg);
+}
+#about .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+#about .content .box .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+#about .content .box .card {
+  background-color: var(--color-bg-variant);
+  height: 120px;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+#about .content .box .card:hover {
+  background-color: transparent;
+  border: var(--color-light) 1px solid;
+}
+
+#about .content .box .card .iconn {
+  color: var(--color-primary);
+  font-size: 30px;
+  margin-top: 15px;
+}
+#about .text {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+#about .text p {
+  color: var(--color-light);
+}
+#about .text a {
+  margin-top: 20px;
+}
+#about .content span,
+#about .text h2 {
+  color: darkkhaki;
+}
+@media (max-width: 600px) {
+  #about .imge {
+    width: 250px;
+    margin: auto;
+  }
+  #about .imge img {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+  }
+  #about .text p {
+    text-align: center;
+  }
+  #about .text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #about .text p {
+    text-align: center;
+  }
+  #about .text {
+    text-align: center;
+  }
+  #about .imge {
+    width: 250px;
+    margin: auto;
+  }
+  #about .imge img {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+  }
+}
